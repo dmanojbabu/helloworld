@@ -7,7 +7,10 @@ use_plugin("python.pylint")
 use_plugin("python.install_dependencies")
 use_plugin("python.distutils")
 
-default_task = "publish"
+#default_task = "publish"
+default_task = ['install_dependencies', 'publish']
+
+
 
 @init
 def initialize(project):
