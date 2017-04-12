@@ -8,7 +8,7 @@ use_plugin("python.install_dependencies")
 use_plugin("python.distutils")
 
 #default_task = "publish"
-default_task = ['install_dependencies', 'publish']
+default_task = ['install_dependencies', 'clean', 'analyze', 'publish']
 
 
 
