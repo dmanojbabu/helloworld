@@ -15,5 +15,5 @@ default_task = ['install_dependencies', 'clean', 'analyze', 'publish']
 @init
 def initialize(project):
     project.build_depends_on('mockito')
-    project.set_property_if_unset("pylint_options", "--output-format=parseable")
+    project.set_property("pylint_options", "--output-format=parseable")
 
