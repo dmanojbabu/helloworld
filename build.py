@@ -10,10 +10,10 @@ use_plugin("python.distutils")
 #default_task = "publish"
 default_task = ['install_dependencies', 'clean', 'analyze', 'publish']
 
-
+VIOLATION_PYLINT_OPTIONS = ["--output-format=parseable"]
 
 @init
 def initialize(project):
     project.build_depends_on('mockito')
-    project.set_property("pylint_options", "--output-format=parseable")
+    project.set_property("pylint_options", VIOLATION_PYLINT_OPTIONS)
 
